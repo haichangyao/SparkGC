@@ -90,7 +90,8 @@ compress and decompress hg17_chr22.fa and hg18_chr22.fa, using hg13_chr22.fa as 
     java -jar decompress.jar /home/reference/chr22/hg13_chr22.fa out.bsc  /home/decompressed/chr22
 
 4.2 FASTQ
-compress and decompress SRR17714832.fastq, using hg13_chr22.fa as reference. The reference file is stored in the local file system, e.g. /home/reference/fastq; the to-be-compressed files are stored in the HDFS, e.g. hdfs://master:9000/fastq/; the compressed file out.bsc is stored in the local file system, e.g. /home/compressed; the decompressed files are stored in the local file system, e.g. /home/decompressed
+compress and decompress SRR17714832.fastq, using hg13_chr22.fa as reference. The FASTQ file is too big to be uploaded to the github, but it can be downloaded from the NCBI site according to the sequence ID.
+The reference file is stored in the local file system, e.g. /home/reference/fastq; the to-be-compressed files are stored in the HDFS, e.g. hdfs://master:9000/fastq/; the compressed file out.bsc is stored in the local file system, e.g. /home/compressed; the decompressed files are stored in the local file system, e.g. /home/decompressed. 
 
 //Compress    
    $SPARK_HOME/bin/spark-submit \
