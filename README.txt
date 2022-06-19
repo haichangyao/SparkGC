@@ -106,7 +106,7 @@ The reference file is stored in the local file system, e.g. /home/reference/fast
        SparkGC_FASTQ.jar /home/reference/fastq/hg13_chr22.fa hdfs://master:9000/fastq/SRR17714832.fastq hdfs://master:9000/compressed/ /home/compressed/
 
 //Decompress
-    java -jar SparkGC_FASTQ.jar /home/reference/fastq/hg13_chr22.fa out.bsc  /home/decompressed
+    java -classpath SparkGC_FASTQ.jar decompress.entrance.DecompressBySparkMain /home/reference/fastq/hg13_chr22.fa /home/compressed/out.bsc /home/decompressed
 
 4.3 use the‘diff’command of Linux to check the difference between the original files and the decompressed files
 
